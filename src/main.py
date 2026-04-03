@@ -5,13 +5,17 @@
 # ]
 # ///
 import pygame
+from plant import Plant
 
 screen = pygame.display.set_mode([500, 500])
 running = True
 
+plant = Plant(10, 10)
+
 
 def draw():
     screen.fill(0)
+    plant.draw(screen)
     pygame.display.update()
     pass
 
